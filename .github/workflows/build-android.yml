@@ -29,7 +29,7 @@ jobs:
         run: npm install
 
       - name: Generate app icon + splash screen from resources/
-        run: npx capacitor-assets generate --android
+        run:run: npx @capacitor/assets generate --android
 
       - name: Sync Capacitor (copies www/ into the native Android project)
         run: npx cap sync android
